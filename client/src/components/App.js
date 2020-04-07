@@ -34,7 +34,7 @@ export default connect(null, actions)(App);
 connect() connects this component to redux store
 take 2 arguments which are functions 
 1. mapPropsToState update props to new global state
-2. mapDispatchTostate returns functions which call dispatch to make changes in global state
+2. mapDispatchTostate returns   functions which call dispatch to make changes in global state
 
 redux calls these two functions through connect and then automatically add them to the props of the component 
 passed as argument
