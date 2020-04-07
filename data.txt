@@ -1,6 +1,4 @@
-https://stark-eyrie-84873.herokuapp.com/ |
-https://git.heroku.com/stark-eyrie-84873.git
-
+https://blooming-ridge-65646.herokuapp.com/ | https://git.heroku.com/blooming-ridge-65646.git
 
 google oauth
 
