@@ -6,6 +6,7 @@ require("./models/user"); // just execute the js file
 const keys = require("./config/keys");
 const passport = require("passport");
 require("./services/passport");
+var cors = require("cors");
 
 const app = express();
 
@@ -21,10 +22,15 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+// -----------
+app.use(cors());
+// -----------
+
 mongoone.connect(keys.mongoURI);
 
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
+require("./routes/coursesRoute")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

@@ -4,8 +4,8 @@ import Header from "./Header";
 import Landing from "./Landing";
 import { connect } from "react-redux";
 import * as actions from "../actions";
+import CourseNew from "../components/NewCourse/CourseNew";
 const Dashboard = () => <h2>Dashboard</h2>;
-const CourseNew = () => <h2>New Course</h2>;
 class App extends Component {
   componentDidMount() {
     // lifecycle method and wire his class to get
